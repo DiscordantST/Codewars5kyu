@@ -78,3 +78,11 @@ Not all paths can be made simpler. The path ["NORTH", "WEST", "SOUTH", "EAST"] i
 "WEST" and "SOUTH", "SOUTH" and "EAST" are not directly opposite of each other and can't become such. Hence the result 
 path is itself : ["NORTH", "WEST", "SOUTH", "EAST"].
 if you want to translate, please ask before translating.
+
+- Extract the domain name from a URL:
+
+Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. 
+For example:
+* url = "http://github.com/carbonfive/raygun" -> domain name = "github"
+* url = "http://www.zombie-bites.com"         -> domain name = "zombie-bites"
+* url = "https://www.cnet.com"                -> domain name = cnet"
