@@ -1,2 +1,7 @@
 def make_readable(seconds):
-    pass
+    h = seconds // 3600
+    m = (seconds - h * 3600) // 60
+    s = seconds - (h * 3600) - (m * 60)
+    return f"{h:0>2}:{m:0>2}:{s:0>2}"
+
+
