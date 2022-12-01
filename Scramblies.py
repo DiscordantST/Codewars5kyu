@@ -4,3 +4,4 @@ def scramble(s1, s2):
             return False
     else:
         return True
+
