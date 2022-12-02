@@ -126,3 +126,11 @@ zeros(12) = 2
 # 12! = 479001600 --> 2 trailing zeros
 Hint: You're not meant to calculate the factorial. Find another way to find the number of zeros.
 
+- Regex Password Validation:
+
+You need to write regex that will validate a password to make sure it meets the following criteria:
+At least six characters long
+contains a lowercase letter
+contains an uppercase letter
+contains a digit
+only contains alphanumeric characters (note that '_' is not alphanumeric)
