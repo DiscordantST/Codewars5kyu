@@ -207,3 +207,19 @@ Examples
 " Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
 "    Hello     World   "                  =>  "#HelloWorld"
 ""                                        =>  false
+
+- Additive Numbers:
+
+Additive number is a string whose digits can form an additive sequence.
+Except for the first two numbers, each subsequent number in the sequence must be the sum of the preceding two.
+For example:
+"112358" is an additive number because the digits can form an additive sequence: 1, 1, 2, 3, 5, 8
+1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8
+Write
+def find_additive_numbers(num)
+that will take in a string and return all the numbers that make up the sequence.
+find_additive_numbers('112358') == ['1','1','2','3','5','8']
+find_additive_numbers('199100199') == ['1','99','100','199']
+find_additive_numbers('1023') == []
+find_additive_numbers('112356') == [] # 6 != 5+3
+Note: Numbers in the additive sequence cannot have leading zeros, so sequence 1, 2, 03 or 1, 02, 3 is invalid
