@@ -161,3 +161,26 @@ Each calculation consist of exactly one operation and two numbers
 The most outer function represents the left operand, the most inner function represents the right operand
 Division should be integer division. For example, this should return 2, not 2.666666...:
 eight(divided_by(three()))
+
+- Recursive ASCII Fractals:
+
+DESCRIPTION:
+Fractals are fun to code, so let's make some.
+
+Your task is to write a function that recursively generates an ASCII fractal.
+
+The function will take a list[str] representing rows of a seed pattern and an int number of iterations
+The seed pattern will be a rectangle containing two types of characters, * and .
+Each new iteration, every * in the starting seed is replaced by a copy of the last iteration.
+Empty space is filled with .
+Example for the seed pattern:
+ ***
+ *.*
+ ***
+Input patterns will always be rectangular.
+For values of i < 1 or seeds with rows that are all empty strings, return [].
+Your function will be tested on both fixed and random inputs.
+Tests
+Your solution must be efficient, as random tests will be on up to 9x9 input seeds
+There are 60 random tests with a seed of size 2 x n (n ranges from 0-9 and there are 5 tests for each value of n, each having i ranging from 0-4)
+There are 25 random tests with seed n x n where n ranges from 5-9. i = 4
