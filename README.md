@@ -184,3 +184,12 @@ Tests
 Your solution must be efficient, as random tests will be on up to 9x9 input seeds
 There are 60 random tests with a seed of size 2 x n (n ranges from 0-9 and there are 5 tests for each value of n, each having i ranging from 0-4)
 There are 25 random tests with seed n x n where n ranges from 5-9. i = 4
+
+- Rot13:
+
+ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet.
+ROT13 is an example of the Caesar cipher.
+Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special 
+characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet 
+should be shifted, like in the original Rot13 "implementation".
+Please note that using encode is considered cheating.
